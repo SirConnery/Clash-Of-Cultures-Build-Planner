@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b2bditbvrvi6f"]
+
+[ext_resource type="Script" uid="uid://bcr2b8hp5ylef" path="res://civilizations/civ_board.gd" id="1_ygqke"]
+[ext_resource type="PackedScene" uid="uid://bxur842vxab3p" path="res://fx/CardHighlightComponent.tscn" id="2_s22id"]
+
+[node name="CivBoard" type="Control" unique_id=1659862117]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_ygqke")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1484742702]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[node name="CardHighlightComponent" parent="TextureRect" unique_id=1987436167 instance=ExtResource("2_s22id")]

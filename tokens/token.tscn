@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bvhwn3rpt3wnd"]
+
+[ext_resource type="Script" uid="uid://bffcjfafbvgyf" path="res://tokens/token.gd" id="1_wi3xw"]
+[ext_resource type="Texture2D" uid="uid://4jcnurevvy2t" path="res://assets/img/tokens/mood_token_happy_1.webp" id="2_y7kwb"]
+
+[node name="Token" type="VBoxContainer" unique_id=1306345208]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_wi3xw")
+
+[node name="AddSubtractButtons" type="HBoxContainer" parent="." unique_id=1830691477]
+layout_mode = 2
+
+[node name="Subtract" type="Button" parent="AddSubtractButtons" unique_id=1210035757]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "-"
+
+[node name="Add" type="Button" parent="AddSubtractButtons" unique_id=392163426]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1748963224]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=900269165]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_y7kwb")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Amount" type="Label" parent="HBoxContainer" unique_id=417870237]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 24
+text = "x0"
+horizontal_alignment = 1

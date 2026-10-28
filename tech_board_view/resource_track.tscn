@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b8w2q3xbalslt"]
+
+[ext_resource type="Script" uid="uid://bnpavnyhvusmu" path="res://tech_board_view/resource_track.gd" id="1_getgg"]
+[ext_resource type="Texture2D" uid="uid://c3q3slwlg72oy" path="res://assets/img/cardboard/resource_track.webp" id="2_x1vdq"]
+
+[node name="ResourceTrack" type="Control" unique_id=1118860351]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_getgg")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1804448886]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_x1vdq")
+expand_mode = 1

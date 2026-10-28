@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b0of3nwq4t2kp"]
+
+[ext_resource type="Script" uid="uid://bk8rpk32lb0ho" path="res://tech_board_view/tech_board.gd" id="1_aqspb"]
+[ext_resource type="Texture2D" uid="uid://c7ahjs3duapye" path="res://assets/img/cardboard/tech_board.webp" id="2_k0cp0"]
+
+[node name="Techboard" type="Control" unique_id=794530117]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_aqspb")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=385426931]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_k0cp0")
+expand_mode = 1

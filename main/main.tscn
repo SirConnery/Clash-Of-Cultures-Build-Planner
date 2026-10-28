@@ -1,0 +1,159 @@
+[gd_scene format=3 uid="uid://r1map1ajlf3r"]
+
+[ext_resource type="Script" uid="uid://cl0h6i1ycodhe" path="res://main/main.gd" id="1_53q0u"]
+[ext_resource type="PackedScene" uid="uid://b8w2q3xbalslt" path="res://tech_board_view/resource_track.tscn" id="2_xwkvk"]
+[ext_resource type="PackedScene" uid="uid://bvhwn3rpt3wnd" path="res://tokens/token.tscn" id="3_3wy1v"]
+[ext_resource type="PackedScene" uid="uid://b0of3nwq4t2kp" path="res://tech_board_view/tech_board.tscn" id="3_c651c"]
+[ext_resource type="Script" uid="uid://jopo51o33kt5" path="res://main/civs_container.gd" id="5_3wy1v"]
+
+[node name="Main" type="Control" unique_id=132082576]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_53q0u")
+
+[node name="MainContent" type="VBoxContainer" parent="." unique_id=1294158136]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Header" type="HBoxContainer" parent="MainContent" unique_id=468534418]
+layout_mode = 2
+
+[node name="MainTabs" type="TabContainer" parent="MainContent" unique_id=1417430324]
+layout_mode = 2
+size_flags_vertical = 3
+current_tab = 1
+
+[node name="TechBoardTab" type="Control" parent="MainContent/MainTabs" unique_id=255112843]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MainContent/MainTabs/TechBoardTab" unique_id=2032795615]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 5
+
+[node name="TechBoard" type="VBoxContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer" unique_id=943588758]
+layout_mode = 2
+
+[node name="ResourcesRow" type="HBoxContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard" unique_id=1129852530]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="ResourceTrack" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow" unique_id=1118860351 instance=ExtResource("2_xwkvk")]
+layout_mode = 2
+
+[node name="Tokens" type="VBoxContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow" unique_id=776795117]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.1
+
+[node name="MoodTokens" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/Tokens" unique_id=1306345208 instance=ExtResource("3_3wy1v")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CultureTokens" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/Tokens" unique_id=602841288 instance=ExtResource("3_3wy1v")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Techboard" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard" unique_id=794530117 instance=ExtResource("3_c651c")]
+layout_mode = 2
+
+[node name="CivsTab" type="Control" parent="MainContent/MainTabs" unique_id=1456929716]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MainContent/MainTabs/CivsTab" unique_id=1792988929]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 5
+
+[node name="CivsContainer" type="VBoxContainer" parent="MainContent/MainTabs/CivsTab/MarginContainer" unique_id=699272284]
+layout_mode = 2
+script = ExtResource("5_3wy1v")
+
+[node name="CivBoards" type="GridContainer" parent="MainContent/MainTabs/CivsTab/MarginContainer/CivsContainer" unique_id=672411500]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 5
+
+[node name="InspectModal" type="Control" parent="." unique_id=787281581]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 1
+
+[node name="Dimmer" type="ColorRect" parent="InspectModal" unique_id=905551234]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="InspectModal/Dimmer" unique_id=452276877]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InspectModal/Dimmer/MarginContainer" unique_id=1679566693]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="LeadersRow" type="HBoxContainer" parent="InspectModal/Dimmer/MarginContainer/VBoxContainer" unique_id=1490196291]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="ZoomLayer" type="CanvasLayer" parent="." unique_id=1491905487]
+layer = 100
+
+[node name="MagnifierContainer" type="SubViewportContainer" parent="ZoomLayer" unique_id=112334230]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MagnifierViewport" type="SubViewport" parent="ZoomLayer/MagnifierContainer" unique_id=1801359193]
+handle_input_locally = false
+render_target_update_mode = 0
+
+[node name="MagnifierCamera" type="Camera2D" parent="ZoomLayer/MagnifierContainer/MagnifierViewport" unique_id=127206892]
+visible = false
+zoom = Vector2(1.5, 1.5)

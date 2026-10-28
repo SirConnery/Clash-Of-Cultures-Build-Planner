@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bxur842vxab3p"]
+
+[ext_resource type="Script" uid="uid://jb5duvxbrle1" path="res://fx/card_highlight_component.gd" id="1_rkkar"]
+
+[node name="CardHighlightComponent" type="Node" unique_id=1987436167]
+script = ExtResource("1_rkkar")
