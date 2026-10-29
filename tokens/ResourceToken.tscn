@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dsns7p40ccf6w"]
+
+[ext_resource type="Script" uid="uid://r0nte8djwqgn" path="res://tokens/resource_token.gd" id="1_qtte1"]
+[ext_resource type="Texture2D" uid="uid://by5u5jqb3ja8n" path="res://assets/img/tokens/food_token.webp" id="2_m5k6x"]
+
+[node name="ResourceToken" type="CenterContainer" unique_id=943160549]
+custom_minimum_size = Vector2(50, 50)
+custom_maximum_size = Vector2(50, 50)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 0
+script = ExtResource("1_qtte1")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1442527136]
+layout_mode = 2
+texture = ExtResource("2_m5k6x")
+stretch_mode = 5

@@ -5,18 +5,25 @@ var loupe_screen_ratio: float = 0.40
 
 const INSPECT_MODE_CARD_SCENE : PackedScene = preload("res://civilizations/CivCard.tscn")
 
-@onready var mood_tokens: Token = %MoodTokens
-@onready var culture_tokens: Token = %CultureTokens
+@onready var mood_tokens: CivicToken = %MoodTokens
+@onready var culture_tokens: CivicToken = %CultureTokens
 
-# Zoom references (Layer 100)
+# Zoom references
 @onready var magnifier_container: SubViewportContainer = $ZoomLayer/MagnifierContainer
 @onready var magnifier_viewport: SubViewport = $ZoomLayer/MagnifierContainer/MagnifierViewport
 @onready var magnifier_camera: Camera2D = $ZoomLayer/MagnifierContainer/MagnifierViewport/MagnifierCamera
 
-# Inspect Modal references (Layer 50)
+# Inspect Modal references
 @onready var inspect_modal: Control = %InspectModal
 @onready var inspect_leaders_row: HBoxContainer = %LeadersRow
 @onready var inspect_dimmer: ColorRect = %Dimmer
+
+# Resource tokens
+@onready var food_token: ResourceToken = %FoodToken
+@onready var wood_token: ResourceToken = %WoodToken
+@onready var ore_token: ResourceToken = %OreToken
+@onready var idea_token: ResourceToken = %IdeaToken
+@onready var gold_token: ResourceToken = %GoldToken
 
 func _ready() -> void:
 	init_tokens()
@@ -25,8 +32,14 @@ func _ready() -> void:
 	get_viewport().size_changed.connect(_update_magnifier_size)
 
 func init_tokens() -> void:
-	mood_tokens.token_type = mood_tokens.TokenType.MOOD
-	culture_tokens.token_type = culture_tokens.TokenType.CULTURE
+	food_token.resource_type = ResourceToken.ResourceType.FOOD
+	wood_token.resource_type = ResourceToken.ResourceType.WOOD
+	ore_token.resource_type = ResourceToken.ResourceType.ORE
+	idea_token.resource_type = ResourceToken.ResourceType.IDEAS
+	gold_token.resource_type = ResourceToken.ResourceType.GOLD
+	
+	mood_tokens.token_type = CivicToken.TokenType.MOOD
+	culture_tokens.token_type = CivicToken.TokenType.CULTURE
 
 func init_magnifier() -> void:
 	magnifier_container.visible = false

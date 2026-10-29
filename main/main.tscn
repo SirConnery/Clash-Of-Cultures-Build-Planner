@@ -2,8 +2,9 @@
 
 [ext_resource type="Script" uid="uid://cl0h6i1ycodhe" path="res://main/main.gd" id="1_53q0u"]
 [ext_resource type="PackedScene" uid="uid://b8w2q3xbalslt" path="res://tech_board_view/resource_track.tscn" id="2_xwkvk"]
-[ext_resource type="PackedScene" uid="uid://bvhwn3rpt3wnd" path="res://tokens/token.tscn" id="3_3wy1v"]
+[ext_resource type="PackedScene" uid="uid://bvhwn3rpt3wnd" path="res://tokens/civic_token.tscn" id="3_3wy1v"]
 [ext_resource type="PackedScene" uid="uid://b0of3nwq4t2kp" path="res://tech_board_view/tech_board.tscn" id="3_c651c"]
+[ext_resource type="PackedScene" uid="uid://dsns7p40ccf6w" path="res://tokens/ResourceToken.tscn" id="3_kfbq2"]
 [ext_resource type="Script" uid="uid://jopo51o33kt5" path="res://main/civs_container.gd" id="5_3wy1v"]
 
 [node name="Main" type="Control" unique_id=132082576]
@@ -31,10 +32,9 @@ layout_mode = 2
 [node name="MainTabs" type="TabContainer" parent="MainContent" unique_id=1417430324]
 layout_mode = 2
 size_flags_vertical = 3
-current_tab = 1
+current_tab = 0
 
 [node name="TechBoardTab" type="Control" parent="MainContent/MainTabs" unique_id=255112843]
-visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -58,6 +58,75 @@ size_flags_stretch_ratio = 0.2
 [node name="ResourceTrack" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow" unique_id=1118860351 instance=ExtResource("2_xwkvk")]
 layout_mode = 2
 
+[node name="Slot0" type="Control" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack" unique_id=1313199781]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1467.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stack" type="GridContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot0" unique_id=2061575532]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 67.0
+offset_top = 45.0
+offset_right = -49.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="FoodToken" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot0/Stack" unique_id=943160549 instance=ExtResource("3_kfbq2")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="WoodToken" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot0/Stack" unique_id=840106898 instance=ExtResource("3_kfbq2")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="OreToken" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot0/Stack" unique_id=1615859836 instance=ExtResource("3_kfbq2")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="IdeaToken" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot0/Stack" unique_id=1366380311 instance=ExtResource("3_kfbq2")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="GoldToken" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot0/Stack" unique_id=494487613 instance=ExtResource("3_kfbq2")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Slot1" type="Control" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack" unique_id=1024498484]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 285.0
+offset_right = -1201.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stack" type="GridContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot1" unique_id=1348020890]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 67.0
+offset_top = 45.0
+offset_right = -49.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
 [node name="Tokens" type="VBoxContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow" unique_id=776795117]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -75,6 +144,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="CivsTab" type="Control" parent="MainContent/MainTabs" unique_id=1456929716]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 

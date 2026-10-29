@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bvhwn3rpt3wnd"]
 
-[ext_resource type="Script" uid="uid://bffcjfafbvgyf" path="res://tokens/token.gd" id="1_wi3xw"]
+[ext_resource type="Script" uid="uid://bffcjfafbvgyf" path="res://tokens/civic_token.gd" id="1_wi3xw"]
 [ext_resource type="Texture2D" uid="uid://4jcnurevvy2t" path="res://assets/img/tokens/mood_token_happy_1.webp" id="2_y7kwb"]
 
-[node name="Token" type="VBoxContainer" unique_id=1306345208]
+[node name="CivicToken" type="VBoxContainer" unique_id=1306345208]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

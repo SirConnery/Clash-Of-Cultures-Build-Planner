@@ -1,5 +1,5 @@
 extends VBoxContainer
-class_name Token
+class_name CivicToken
 
 enum TokenType { MOOD, CULTURE }
 
@@ -24,7 +24,7 @@ var total_amount := 0:
 @onready var add: Button = %Add
 
 func _ready() -> void:
-	update_visuals()
+	#update_visuals()
 	subtract.pressed.connect(subtract_token)
 	add.pressed.connect(add_token)
 
