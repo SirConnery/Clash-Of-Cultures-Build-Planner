@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b0of3nwq4t2kp" path="res://tech_board_view/tech_board.tscn" id="3_c651c"]
 [ext_resource type="PackedScene" uid="uid://dsns7p40ccf6w" path="res://tokens/ResourceToken.tscn" id="3_kfbq2"]
 [ext_resource type="Script" uid="uid://jopo51o33kt5" path="res://main/civs_container.gd" id="5_3wy1v"]
+[ext_resource type="Texture2D" uid="uid://q32vqxccepqs" path="res://assets/img/cardboard/player_aid.webp" id="7_4dugh"]
 
 [node name="Main" type="Control" unique_id=132082576]
 layout_mode = 3
@@ -32,11 +33,13 @@ layout_mode = 2
 [node name="MainTabs" type="TabContainer" parent="MainContent" unique_id=1417430324]
 layout_mode = 2
 size_flags_vertical = 3
-current_tab = 0
+current_tab = 2
 tab_0/title = "Tech Board"
 tab_1/title = "Civilizations"
+tab_2/title = "Player Aid"
 
 [node name="TechBoardTab" type="Control" parent="MainContent/MainTabs" unique_id=255112843]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 metadata/_tab_name = "Tech Board"
@@ -402,6 +405,25 @@ script = ExtResource("5_3wy1v")
 layout_mode = 2
 size_flags_vertical = 3
 columns = 5
+
+[node name="PlayerAidTab" type="Control" parent="MainContent/MainTabs" unique_id=1643701144]
+layout_mode = 2
+metadata/_tab_index = 2
+metadata/_tab_name = "Player Aid"
+
+[node name="MarginContainer" type="MarginContainer" parent="MainContent/MainTabs/PlayerAidTab" unique_id=511026149]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="MainContent/MainTabs/PlayerAidTab/MarginContainer" unique_id=1994923928]
+layout_mode = 2
+texture = ExtResource("7_4dugh")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="InspectModal" type="Control" parent="." unique_id=787281581]
 unique_name_in_owner = true
