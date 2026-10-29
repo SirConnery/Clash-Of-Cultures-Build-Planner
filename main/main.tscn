@@ -127,6 +127,155 @@ grow_horizontal = 2
 grow_vertical = 2
 columns = 3
 
+[node name="Slot2" type="Control" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack" unique_id=81309922]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 551.0
+offset_right = -968.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stack" type="GridContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot2" unique_id=1965311862]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 44.0
+offset_top = 45.0
+offset_right = -57.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="Slot3" type="Control" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack" unique_id=1547873103]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 784.0
+offset_right = -764.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stack" type="GridContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot3" unique_id=1528511897]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 44.0
+offset_top = 45.0
+offset_right = -27.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="Slot4" type="Control" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack" unique_id=39384276]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 988.0
+offset_right = -590.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stack" type="GridContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot4" unique_id=1039900922]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 44.0
+offset_top = 45.0
+offset_right = -27.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="Slot5" type="Control" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack" unique_id=1648946205]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1166.0
+offset_right = -444.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stack" type="GridContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot5" unique_id=699747577]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 45.0
+offset_right = -15.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="Slot6" type="Control" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack" unique_id=1751476733]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1313.0
+offset_right = -320.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stack" type="GridContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot6" unique_id=1897827082]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 45.0
+offset_right = -2.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="Slot7" type="Control" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack" unique_id=1378899798]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1435.0
+offset_right = -224.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stack" type="GridContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot7" unique_id=1704692311]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 45.0
+offset_right = -2.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="Tokens" type="VBoxContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow" unique_id=776795117]
 layout_mode = 2
 size_flags_horizontal = 3

@@ -26,10 +26,26 @@ const INSPECT_MODE_CARD_SCENE : PackedScene = preload("res://civilizations/CivCa
 @onready var gold_token: ResourceToken = %GoldToken
 
 func _ready() -> void:
+	G_EventBus.civic_token_change_requested.connect(_on_civic_token_change_requested)
 	init_tokens()
 	init_magnifier()
 	init_inspect_modal()
 	get_viewport().size_changed.connect(_update_magnifier_size)
+
+func _process(_delta: float) -> void:
+	if not magnifier_container.visible:
+		return
+
+	var viewport_rect: Rect2 = get_viewport_rect()
+	var mouse_screen_pos: Vector2 = get_viewport().get_mouse_position()
+	
+	var target_pos: Vector2 = mouse_screen_pos - (magnifier_container.size * 0.5)
+	var max_pos: Vector2 = viewport_rect.size - magnifier_container.size
+	target_pos.x = clampf(target_pos.x, 0.0, max_pos.x)
+	target_pos.y = clampf(target_pos.y, 0.0, max_pos.y)
+
+	magnifier_container.global_position = target_pos
+	magnifier_camera.global_position = get_global_mouse_position()
 
 func init_tokens() -> void:
 	food_token.resource_type = ResourceToken.ResourceType.FOOD
@@ -43,6 +59,9 @@ func init_tokens() -> void:
 
 func init_magnifier() -> void:
 	magnifier_container.visible = false
+	
+	magnifier_container.set_anchors_preset(Control.PRESET_TOP_LEFT)
+	
 	magnifier_camera.zoom = Vector2(zoom_level, zoom_level)
 	magnifier_viewport.world_2d = get_viewport().find_world_2d()
 	_update_magnifier_size()
@@ -97,17 +116,17 @@ func _update_magnifier_size() -> void:
 	magnifier_container.custom_minimum_size = new_size
 	magnifier_container.size = new_size
 
-func _process(_delta: float) -> void:
-	if not magnifier_container.visible:
+
+
+func _on_civic_token_change_requested(type: CivicToken.TokenType, delta: int) -> void:
+	# Condition 1: No change needed
+	if delta == 0:
 		return
 
-	var viewport_rect: Rect2 = get_viewport_rect()
-	var mouse_screen_pos: Vector2 = get_viewport().get_mouse_position()
-	
-	var target_pos: Vector2 = mouse_screen_pos - (magnifier_container.size * 0.5)
-	var max_pos: Vector2 = viewport_rect.size - magnifier_container.size
-	target_pos.x = clampf(target_pos.x, 0.0, max_pos.x)
-	target_pos.y = clampf(target_pos.y, 0.0, max_pos.y)
+	var target_widget: CivicToken = mood_tokens if type == CivicToken.TokenType.MOOD else culture_tokens
 
-	magnifier_container.global_position = target_pos
-	magnifier_camera.global_position = get_global_mouse_position()
+	# Condition 2 & 3: Increment or decrement
+	if delta > 0:
+		target_widget.add_token()
+	if delta < 0:
+		target_widget.subtract_token()

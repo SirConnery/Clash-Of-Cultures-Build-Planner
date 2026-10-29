@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dhjrx4tubxyeu"]
+
+[ext_resource type="Script" uid="uid://dl03f5i457v5a" path="res://tech_board_view/tech_slot.gd" id="1_6jwb4"]
+
+[node name="TechSlot" type="Button" unique_id=1928019473]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 52.0
+offset_top = 74.0
+offset_right = -1803.0
+offset_bottom = -935.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6jwb4")

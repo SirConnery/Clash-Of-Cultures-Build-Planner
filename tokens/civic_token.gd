@@ -1,12 +1,12 @@
 extends VBoxContainer
 class_name CivicToken
 
-enum TokenType { MOOD, CULTURE }
+enum TokenType { NONE, MOOD, CULTURE }
 
 const TEXTURE_MOOD = preload("res://assets/img/tokens/mood_token_happy_1.webp")
 const TEXTURE_CULTURE = preload("res://assets/img/tokens/culture_token_1.webp")
 
-var token_type: TokenType = TokenType.MOOD:
+var token_type: TokenType = TokenType.NONE:
 	set(value):
 		token_type = value
 		if is_node_ready():
@@ -24,9 +24,15 @@ var total_amount := 0:
 @onready var add: Button = %Add
 
 func _ready() -> void:
-	#update_visuals()
-	subtract.pressed.connect(subtract_token)
-	add.pressed.connect(add_token)
+	subtract.pressed.connect(_on_subtract_pressed)
+	add.pressed.connect(_on_add_pressed)
+	update_visuals()
+
+func _on_subtract_pressed() -> void:
+	G_EventBus.civic_token_change_requested.emit(token_type, -1)
+
+func _on_add_pressed() -> void:
+	G_EventBus.civic_token_change_requested.emit(token_type, 1)
 
 func update_visuals() -> void:
 	update_label()
@@ -36,10 +42,19 @@ func update_label() -> void:
 	amount_label.text = str(total_amount)
 
 func update_texture() -> void:
-	texture_rect.texture = TEXTURE_MOOD if token_type == TokenType.MOOD else TEXTURE_CULTURE
+	match token_type:
+		TokenType.MOOD:
+			texture_rect.texture = TEXTURE_MOOD
+		TokenType.CULTURE:
+			texture_rect.texture = TEXTURE_CULTURE
+		TokenType.NONE, _:
+			texture_rect.texture = null
 
+# Main commands these directly
 func add_token() -> void:
-	total_amount += 1
+	if token_type != TokenType.NONE:
+		total_amount += 1
 
 func subtract_token() -> void:
-	total_amount -= 1
+	if token_type != TokenType.NONE:
+		total_amount -= 1

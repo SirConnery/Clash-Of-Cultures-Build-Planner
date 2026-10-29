@@ -4,16 +4,26 @@ class_name ResourceTrack
 @onready var slots: Array[Control] = [
 	%Slot0,
 	%Slot1,
+	%Slot2,
+	%Slot3,
+	%Slot4,
+	%Slot5,
+	%Slot6,
+	%Slot7
 ]
 
 @onready var stacks: Array[GridContainer] = [
 	%Slot0/Stack,
 	%Slot1/Stack,
+	%Slot2/Stack,
+	%Slot3/Stack,
+	%Slot4/Stack,
+	%Slot5/Stack,
+	%Slot6/Stack,
+	%Slot7/Stack
 ]
 
 func _ready() -> void:
-	# Ensure the track catches drops, while child slots/stacks ignore
-	# the mouse so they don't intercept the drop before this script can see it
 	mouse_filter = Control.MOUSE_FILTER_STOP
 	for slot in slots:
 		slot.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -31,7 +41,6 @@ func add_token(slot_index: int, token: Control) -> void:
 	token.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	token.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 
-	# Ensure the token is fully visible when added to the slot
 	token.modulate.a = 1.0
 
 	stacks[slot_index].add_child(token)
