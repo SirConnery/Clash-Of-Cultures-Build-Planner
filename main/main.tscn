@@ -33,10 +33,13 @@ layout_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 current_tab = 0
+tab_0/title = "Tech Board"
+tab_1/title = "Civilizations"
 
 [node name="TechBoardTab" type="Control" parent="MainContent/MainTabs" unique_id=255112843]
 layout_mode = 2
 metadata/_tab_index = 0
+metadata/_tab_name = "Tech Board"
 
 [node name="MarginContainer" type="MarginContainer" parent="MainContent/MainTabs/TechBoardTab" unique_id=2032795615]
 layout_mode = 1
@@ -81,10 +84,6 @@ offset_bottom = -25.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 3
-
-[node name="FoodToken" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot0/Stack" unique_id=943160549 instance=ExtResource("3_kfbq2")]
-unique_name_in_owner = true
-layout_mode = 2
 
 [node name="WoodToken" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot0/Stack" unique_id=840106898 instance=ExtResource("3_kfbq2")]
 unique_name_in_owner = true
@@ -151,6 +150,10 @@ offset_bottom = -25.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 3
+
+[node name="FoodToken" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack/Slot2/Stack" unique_id=943160549 instance=ExtResource("3_kfbq2")]
+unique_name_in_owner = true
+layout_mode = 2
 
 [node name="Slot3" type="Control" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ResourcesRow/ResourceTrack" unique_id=1547873103]
 unique_name_in_owner = true
@@ -296,6 +299,7 @@ layout_mode = 2
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
+metadata/_tab_name = "Civilizations"
 
 [node name="MarginContainer" type="MarginContainer" parent="MainContent/MainTabs/CivsTab" unique_id=1792988929]
 layout_mode = 1

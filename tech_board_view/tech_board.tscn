@@ -29,26 +29,670 @@ expand_mode = 1
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.028
-anchor_top = 0.069000006
-anchor_right = 0.061000004
-anchor_bottom = 0.134
-offset_left = -0.76000214
-offset_top = -0.5200043
-offset_right = -0.120010376
-offset_bottom = 0.27999878
-text = "aaa"
+anchor_left = 0.027604166
+anchor_top = 0.06851852
+anchor_right = 0.0609375
+anchor_bottom = 0.13425925
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
 
 [node name="TechSlot2" parent="TextureRect" unique_id=546337449 instance=ExtResource("3_bvm8w")]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.028
-anchor_top = 0.18200001
-anchor_right = 0.061000004
-anchor_bottom = 0.24800001
-offset_left = -0.76000214
-offset_top = 0.43998718
-offset_right = -0.120010376
-offset_bottom = 0.15997314
-text = "aaa"
+anchor_left = 0.027604166
+anchor_top = 0.18240741
+anchor_right = 0.0609375
+anchor_bottom = 0.24814814
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot3" parent="TextureRect" unique_id=1293338540 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.027083334
+anchor_top = 0.29722223
+anchor_right = 0.060416665
+anchor_bottom = 0.36296296
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot4" parent="TextureRect" unique_id=1539428704 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.027083334
+anchor_top = 0.41111112
+anchor_right = 0.060416665
+anchor_bottom = 0.47685185
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot5" parent="TextureRect" unique_id=734633986 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.027083334
+anchor_top = 0.537963
+anchor_right = 0.060416665
+anchor_bottom = 0.6037037
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot6" parent="TextureRect" unique_id=151438814 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0265625
+anchor_top = 0.6527778
+anchor_right = 0.059895832
+anchor_bottom = 0.7185185
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot7" parent="TextureRect" unique_id=1376045892 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0265625
+anchor_top = 0.76666665
+anchor_right = 0.059895832
+anchor_bottom = 0.8324074
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot8" parent="TextureRect" unique_id=867321642 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.026041666
+anchor_top = 0.88148147
+anchor_right = 0.059375
+anchor_bottom = 0.94722223
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot9" parent="TextureRect" unique_id=1564497215 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.190625
+anchor_top = 0.06851852
+anchor_right = 0.22395833
+anchor_bottom = 0.13425925
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot10" parent="TextureRect" unique_id=472453449 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18958333
+anchor_top = 0.18240741
+anchor_right = 0.22291666
+anchor_bottom = 0.24814814
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot11" parent="TextureRect" unique_id=1934717097 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18958333
+anchor_top = 0.29722223
+anchor_right = 0.22291666
+anchor_bottom = 0.36296296
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot12" parent="TextureRect" unique_id=1814869782 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1890625
+anchor_top = 0.41203704
+anchor_right = 0.22239584
+anchor_bottom = 0.47777778
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot13" parent="TextureRect" unique_id=1332659029 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18854167
+anchor_top = 0.5361111
+anchor_right = 0.22239584
+anchor_bottom = 0.6037037
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot14" parent="TextureRect" unique_id=2101721473 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1890625
+anchor_top = 0.65092593
+anchor_right = 0.22239584
+anchor_bottom = 0.7175926
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot15" parent="TextureRect" unique_id=1484470405 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18854167
+anchor_top = 0.76666665
+anchor_right = 0.221875
+anchor_bottom = 0.8333333
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot16" parent="TextureRect" unique_id=172556728 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18854167
+anchor_top = 0.88055557
+anchor_right = 0.221875
+anchor_bottom = 0.94722223
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot17" parent="TextureRect" unique_id=1218565575 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35208333
+anchor_top = 0.06944445
+anchor_right = 0.38541666
+anchor_bottom = 0.13518518
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot18" parent="TextureRect" unique_id=924207719 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35208333
+anchor_top = 0.18333334
+anchor_right = 0.38541666
+anchor_bottom = 0.24907407
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot19" parent="TextureRect" unique_id=924676788 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3515625
+anchor_top = 0.29814816
+anchor_right = 0.38489583
+anchor_bottom = 0.3638889
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot20" parent="TextureRect" unique_id=191973719 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3515625
+anchor_top = 0.41203704
+anchor_right = 0.38489583
+anchor_bottom = 0.47777778
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot21" parent="TextureRect" unique_id=1720637979 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3515625
+anchor_top = 0.5388889
+anchor_right = 0.38489583
+anchor_bottom = 0.60462964
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot22" parent="TextureRect" unique_id=76202248 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35104167
+anchor_top = 0.65370363
+anchor_right = 0.384375
+anchor_bottom = 0.71944445
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot23" parent="TextureRect" unique_id=539979120 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35104167
+anchor_top = 0.7675926
+anchor_right = 0.384375
+anchor_bottom = 0.8333333
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot24" parent="TextureRect" unique_id=1514660513 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35052082
+anchor_top = 0.8824074
+anchor_right = 0.38385418
+anchor_bottom = 0.94814813
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot25" parent="TextureRect" unique_id=1791094178 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5140625
+anchor_top = 0.06944445
+anchor_right = 0.5473958
+anchor_bottom = 0.13518518
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot26" parent="TextureRect" unique_id=301271684 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5140625
+anchor_top = 0.18333334
+anchor_right = 0.5473958
+anchor_bottom = 0.24907407
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot27" parent="TextureRect" unique_id=1309600126 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.51354164
+anchor_top = 0.29814816
+anchor_right = 0.546875
+anchor_bottom = 0.3638889
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot28" parent="TextureRect" unique_id=464353183 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.51354164
+anchor_top = 0.41203704
+anchor_right = 0.546875
+anchor_bottom = 0.47777778
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot29" parent="TextureRect" unique_id=1081303639 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.51354164
+anchor_top = 0.5388889
+anchor_right = 0.546875
+anchor_bottom = 0.60462964
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot30" parent="TextureRect" unique_id=1954469588 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5130208
+anchor_top = 0.6537037
+anchor_right = 0.5463542
+anchor_bottom = 0.71944445
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot31" parent="TextureRect" unique_id=85683720 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5130208
+anchor_top = 0.7675926
+anchor_right = 0.5463542
+anchor_bottom = 0.8333333
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot32" parent="TextureRect" unique_id=1853643134 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5125
+anchor_top = 0.8824074
+anchor_right = 0.54583335
+anchor_bottom = 0.94814813
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot33" parent="TextureRect" unique_id=1625703442 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6770833
+anchor_top = 0.06944445
+anchor_right = 0.7104167
+anchor_bottom = 0.13518518
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot34" parent="TextureRect" unique_id=63975830 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.67604166
+anchor_top = 0.18333334
+anchor_right = 0.709375
+anchor_bottom = 0.24907407
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot35" parent="TextureRect" unique_id=805197438 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.67604166
+anchor_top = 0.29814816
+anchor_right = 0.709375
+anchor_bottom = 0.3638889
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot36" parent="TextureRect" unique_id=1755612568 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.67552084
+anchor_top = 0.41296297
+anchor_right = 0.70885414
+anchor_bottom = 0.4787037
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot37" parent="TextureRect" unique_id=741060112 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.675
+anchor_top = 0.537037
+anchor_right = 0.70885414
+anchor_bottom = 0.60462964
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot38" parent="TextureRect" unique_id=224436017 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.67552084
+anchor_top = 0.65185183
+anchor_right = 0.70885414
+anchor_bottom = 0.7185185
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot39" parent="TextureRect" unique_id=1619903662 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.675
+anchor_top = 0.7675926
+anchor_right = 0.7083333
+anchor_bottom = 0.8342593
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot40" parent="TextureRect" unique_id=762305510 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.675
+anchor_top = 0.8814815
+anchor_right = 0.7083333
+anchor_bottom = 0.94814813
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot41" parent="TextureRect" unique_id=706468104 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8385417
+anchor_top = 0.07037037
+anchor_right = 0.871875
+anchor_bottom = 0.13611111
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot42" parent="TextureRect" unique_id=640847720 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8385417
+anchor_top = 0.18425927
+anchor_right = 0.871875
+anchor_bottom = 0.25
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot43" parent="TextureRect" unique_id=1380827919 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.83802086
+anchor_top = 0.29907408
+anchor_right = 0.87135416
+anchor_bottom = 0.3648148
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot44" parent="TextureRect" unique_id=1793164326 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.83802086
+anchor_top = 0.41296297
+anchor_right = 0.87135416
+anchor_bottom = 0.4787037
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot45" parent="TextureRect" unique_id=1529487242 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.83802086
+anchor_top = 0.53981483
+anchor_right = 0.87135416
+anchor_bottom = 0.60555553
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot46" parent="TextureRect" unique_id=94906193 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8375
+anchor_top = 0.6546296
+anchor_right = 0.87083334
+anchor_bottom = 0.72037035
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot47" parent="TextureRect" unique_id=671029505 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.8375
+anchor_top = 0.76851845
+anchor_right = 0.87083334
+anchor_bottom = 0.8342593
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TechSlot48" parent="TextureRect" unique_id=573719287 instance=ExtResource("3_bvm8w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.83697915
+anchor_top = 0.8833333
+anchor_right = 0.8703125
+anchor_bottom = 0.9490741
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true

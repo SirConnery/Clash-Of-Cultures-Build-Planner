@@ -84,5 +84,4 @@ func _on_slot_toggled(reward: TechSlot.RewardType, is_active: bool) -> void:
 		else CivicToken.TokenType.CULTURE
 	)
 
-	# Emit directly to the global event bus
 	G_EventBus.civic_token_change_requested.emit(token_type, delta)
