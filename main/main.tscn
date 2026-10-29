@@ -295,6 +295,90 @@ layout_mode = 2
 [node name="Techboard" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard" unique_id=794530117 instance=ExtResource("3_c651c")]
 layout_mode = 2
 
+[node name="ActionSelection" type="HBoxContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard" unique_id=1582449230]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="Button" type="Button" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection" unique_id=994112091]
+modulate = Color(0.8367551, 0.3851509, 1.92523e-07, 1)
+layout_mode = 2
+text = "Activate Build
+Order Mode"
+
+[node name="ActivateCity" type="VBoxContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection" unique_id=117080039]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/ActivateCity" unique_id=1683606025]
+layout_mode = 2
+text = "Activate City"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Button" type="Button" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/ActivateCity" unique_id=1164968132]
+layout_mode = 2
+text = "Collect"
+
+[node name="Button2" type="Button" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/ActivateCity" unique_id=957710253]
+layout_mode = 2
+text = "Construct"
+
+[node name="Button3" type="Button" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/ActivateCity" unique_id=1252171377]
+layout_mode = 2
+text = "Recruit"
+
+[node name="Units" type="VBoxContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection" unique_id=123693912]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/Units" unique_id=1129524716]
+layout_mode = 2
+text = "Units"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Button" type="Button" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/Units" unique_id=304912958]
+layout_mode = 2
+text = "Found City"
+
+[node name="Button2" type="Button" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/Units" unique_id=848011311]
+layout_mode = 2
+text = "Move Units"
+
+[node name="OtherActions" type="VBoxContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection" unique_id=1675116447]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/OtherActions" unique_id=1496725446]
+layout_mode = 2
+text = "Other Actions"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Button" type="Button" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/OtherActions" unique_id=1646179286]
+layout_mode = 2
+text = "Increase Happiness"
+
+[node name="Button2" type="Button" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/OtherActions" unique_id=1682321144]
+layout_mode = 2
+text = "Influence Culture"
+
+[node name="OtherActions2" type="VBoxContainer" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection" unique_id=2008555846]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/OtherActions2" unique_id=1588430330]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="MainContent/MainTabs/TechBoardTab/MarginContainer/TechBoard/ActionSelection/OtherActions2" unique_id=310449878]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+text = "Copy to Clipboard"
+
 [node name="CivsTab" type="Control" parent="MainContent/MainTabs" unique_id=1456929716]
 visible = false
 layout_mode = 2
